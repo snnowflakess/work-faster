@@ -1,0 +1,284 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* App.css - MetroGuide Theme #ffa9f9 #fff7ad */
+
+.App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  padding: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-image: url("./assets/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ---------- Splash Screen ---------- */
+.splash {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 40px);
+  text-align: center;
+  gap: 12px;
+}
+
+.splash-img {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+}
+
+.splash h1 {
+  font-size: 2.2rem;
+  margin: 0;
+  color: #ff4fd8;
+}
+
+.splash h2 {
+  font-size: 1.6rem;
+  margin: 0;
+  color: #ffaa00;
+}
+
+.splash p {
+  margin: 0;
+  color: #444;
+  font-size: 1rem;
+}
+
+/* ---------- Centered Boxes (Select, Fare, Payment) ---------- */
+.select-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 40px);
+}
+
+.select-box {
+  width: 500px;
+  height: 530px;
+  
+  padding: 20px;
+  
+  text-align: center;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* ---------- Headings ---------- */
+h1, h2 {
+  color: #89106f;
+  margin-bottom: 12px;
+
+}
+
+/* ---------- Form controls ---------- */
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+select, input[type="text"], input[type="password"] {
+  padding: 8px 10px;
+  margin-top: 6px;
+  border: 1px solid #ff8de0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff7ad;
+}
+
+select:focus, input:focus {
+  box-shadow: 0 0 0 3px rgba(255, 169, 249, 0.4);
+}
+
+/* ---------- Buttons ---------- */
+button {
+  margin-top: 18px;
+  padding: 10px 18px;
+  background-color: #ff88e0;
+  border: none;
+  border-radius: 8px;
+  color: #222;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 160ms ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #ffaa00;
+}
+
+button:disabled {
+  background-color: #ffd5f0;
+  cursor: not-allowed;
+  color: #fff;
+}
+
+/* ---------- Tourist spots ---------- */
+.tourist-spots {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.tourist-spots > div {
+  background: linear-gradient(135deg, #ffa9f9, #fff7ad);
+  padding: 14px 16px;
+  border-radius: 10px;
+  width: 220px;
+  min-height: 70px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  text-align: left;
+}
+
+.tourist-spots h4 {
+  margin: 0 0 6px 0;
+  color: #ff4fd8;
+}
+
+/* ---------- Payment Screen ---------- */
+.payment-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.payment-options {
+  min-width: 180px;
+  text-align: left;
+  padding: 12px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ffa9f9, #fff7ad);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.payment-options h3 {
+  margin-top: 0;
+}
+
+.payment-options div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+  font-size: 0.98rem;
+}
+
+input[type="radio"] {
+  width: 16px;
+  height: 16px;
+}
+
+.payment-details {
+  width: 320px;
+  max-width: calc(100vw - 60px);
+  text-align: left;
+  padding: 16px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ffa9f9, #fff7ad);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* ---------- Processing / Success ---------- */
+.processing, .success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 40px);
+  gap: 12px;
+  color: #222;
+}
+
+/* ---------- Ticket / QR Box ---------- */
+.qr-box {
+  width: 150px;
+  height: 150px;
+  background: #ffffff;
+  background-image: url("./assets/qr.png");
+  background-size: cover;      /* makes the image cover the box completely */
+  background-position: center; /* centers the image */
+  background-repeat: no-repeat; /* prevents tiling */
+  
+  margin: 20px auto 8px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+.ticket-card {
+  background: linear-gradient(135deg, #ffa9f9, #fff7ad);
+  padding: 18px;
+  border-radius: 12px;
+  width: 340px;
+  max-width: calc(100vw - 40px);
+  margin: 12px auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 720px) {
+  .payment-container {
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+  }
+  .payment-options, .payment-details {
+    width: 92%;
+    max-width: 420px;
+  }
+  .tourist-spots > div { width: 100%; max-width: 320px; }
+  select { min-width: 140px; }
+}
